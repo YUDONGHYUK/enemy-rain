@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+.container {
+  position: relative;
+}
+
+.hero {
+  position: absolute;
+  background-image: url("./images/hero.png");
+  left: calc(50% - 17.5px);
+  bottom: 5px;
+  width: 35px;
+  height: 54px;
+}
