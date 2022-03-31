@@ -1,20 +1,76 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   text-align: center;
 }
 
-.container {
+button {
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.start-button {
+  font-size: 42px;
+  color: white;
+  background-color: tomato;
+  padding: 3px 18px;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin: 28px 0;
+  transition: transform 200ms ease-in;
+}
+
+.start-button:hover {
+  transform: scale(1.1);
+}
+
+.game {
   position: relative;
+  background: url("./images/bg.png") center/cover;
+  width: 800px;
+  height: 600px;
+  margin: auto;
+}
+
+.enemy {
+  position: absolute;
+  background-image: url(./images/enemy.png);
+  width: 45px;
+  height: 54px;
 }
 
 .hero {
   position: absolute;
   background-image: url("./images/hero.png");
   left: calc(50% - 17.5px);
-  bottom: 5px;
+  bottom: 0;
   width: 35px;
   height: 54px;
+  border: none;
+}
+
+.pop-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 150px;
+  background-color: #00000090;
+  margin: auto;
+  transform: translateY(-300%);
+  visibility: hidden;
+}
+
+.pop-up__message {
+  font-size: 48px;
+  color: white;
+  margin-top: 12px;
+}
+
+.pop-up__retry {
+  font-size: 22px;
+  color: black;
+  background-color: wheat;
+  border: 3px solid black;
+  border-radius: 8px;
+  padding: 8px 14px;
+  margin-top: 8px;
 }

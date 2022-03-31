@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width" />
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="hero.js" defer></script>
+    <script src="enemy.js" defer></script>
+    <script src="init.js" defer></script>
   </head>
   <body>
-    <div class="container">
+    <button class="start-button">Start</button>
+    <section class="game">
       <div class="hero"></div>
-      <div class="bg">
-        <img class="bg-img" src="./images/bg.png" alt="" />
-      </div>
-    </div>
-
-    <script src="hero.js"></script>
-    <script src="enemy.js"></script>
-    <script src="init.js"></script>
+    </section>
+    <section class="pop-up">
+      <span class="pop-up__message">Game Over</span>
+      <button class="pop-up__retry">Retry</button>
+    </section>
   </body>
 </html>

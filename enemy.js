@@ -1,3 +1,1 @@
-class Enemy {
-  
-}
+class Enemy {}
